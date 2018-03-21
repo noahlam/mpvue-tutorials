@@ -1,0 +1,244 @@
+/*页面的统一样式,相当于body*/
+/* --(两条横杠)开头的,是css3的变量声明,在其他任意地方,可以用 var(--xxx)引用*/
+page{
+  background-color:#efefef;
+  height:100%;
+  --red: #fd5a3e;
+  --orange: #ff7a22;
+  --blue: #0779fc;
+  --border: #efefef;
+}
+.noscroll {
+  height: 100vh;
+  overflow: hidden;
+}
+.container {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.btn{
+  width: 710rpx;
+  height: 80rpx;
+  background: var(--blue);
+  color: #fff;
+  font-size: 32rpx;
+  border-radius: 10rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+.btn650{
+  width: 650rpx;
+  height: 80rpx;
+  background: var(--blue);
+  color: #fff;
+  font-size: 32rpx;
+  border-radius: 10rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+
+.ceil {
+  height:100rpx;
+  line-height:100rpx;
+  margin:0 24rpx;
+}
+.ceil:not(:last-child) {
+  border-bottom:1px solid #d2d2d2;
+}
+.mt200{margin-top: 200rpx;}
+.mt100{margin-top: 100rpx;}
+/*字体大小*/
+.f36{font-size: 36rpx;}
+.f32{font-size: 32rpx;}
+.f30{font-size: 30rpx;}
+.f28{font-size: 28rpx;}
+.f26{font-size: 26rpx;}
+.f24{font-size: 24rpx;}
+.f22{font-size: 22rpx;}
+.f20{font-size: 20rpx;}
+/* 行高 */
+.lh36{line-height:36rpx;}
+.lh34{line-height:34rpx;}
+.lh32{line-height:32rpx;}
+.lh30{line-height:30rpx;}
+.lh28{line-height:28rpx;}
+.lh26{line-height:26rpx;}
+.lh24{line-height:24rpx;}
+.lh22{line-height:22rpx;}
+.lh20{line-height:20rpx;}
+/* 高 */
+.h36{height:36rpx;}
+.h34{height:34rpx;}
+.h32{height:32rpx;}
+.h30{height:30rpx;}
+.h28{height:28rpx;}
+.h26{height:26rpx;}
+.h24{height:24rpx;}
+.h22{height:22rpx;}
+.h20{height:20rpx;}
+/*颜色*/
+.c999{color: #999;}
+.c666{color: #666;}
+.c333{color: #333;}
+.cred{color: #fd5a3e;}
+.corange{color: #ff7a22;}
+.cblue{color: #0779fc}
+/*背景*/
+.bgw{background: #fff;}
+.bggy{background: #f5f5f5;}
+/*宽度*/
+.w100{width: 100%;}
+/*文本对齐*/
+.tac{text-align: center;}
+/*单行省略号*/
+.eps{
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap
+}
+/*边框*/
+.bd{border:1px solid #d2d2d2;}
+.bdt{border-top:1px solid #d2d2d2;}
+.bdb{border-bottom:1px solid #d2d2d2;}
+.bdl{border-left:1px solid #d2d2d2;}
+.bdr{border-right:1px solid #d2d2d2;}
+/*padding*/
+.p10{padding: 10rpx;}
+.pl10{padding-left: 10rpx;}
+.pr10{padding-right: 10rpx;}
+.pt10{padding-top: 10rpx;}
+.pb10{padding-bottom: 10rpx;}
+.pb18{padding-bottom:18rpx;}
+
+.p20{padding: 20rpx;}
+.pl20{padding-left: 20rpx;}
+.pr20{padding-right: 20rpx;}
+.pt20{padding-top: 20rpx;}
+.pb20{padding-bottom: 20rpx;}
+
+/*margin*/
+.m10{margin: 10rpx;}
+.ml10{margin-left: 10rpx;}
+.mr10{margin-right: 10rpx;}
+.mt10{margin-top: 10rpx;}
+.mb10{margin-bottom: 10rpx;}
+
+.m20{margin: 20rpx;}
+.ml20{margin-left: 20rpx;}
+.mr20{margin-right: 20rpx;}
+.mt20{margin-top: 20rpx;}
+.mb20{margin-bottom: 20rpx;}
+/*布局*/
+.dib{display: inline-block;}
+.dsf{display: flex;}
+.f1{flex:1;}
+.fdc{flex-direction: column;}
+.fdr{flex-direction: row;}
+.jcc{justify-content: center;}
+.jcs{justify-content: flex-start;}
+.jce{justify-content: flex-end;}
+.aic{align-items: center;}
+.ais{align-items: flex-start;}
+.aie{align-items: flex-end;}
+.vam{vertical-align: middle}
+.vab{vertical-align: bottom}
+.vat{vertical-align: top}
+.tar{text-align: right;}
+.tac{text-align:center;}
+
+/*以下是cell的样式*/
+.cell{
+  width: 100%;
+  height: 100rpx;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border);
+  color: #666;
+  font-size: 28rpx;
+}
+.cell:last-child{
+  border-bottom: none;
+}
+.cellLeft{
+  flex-shrink: 0;
+}
+.cellRight{
+  font-size: 24rpx;
+  color: #999;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 70%;
+}
+.cellText{
+  text-align: right;
+  flex-shrink: 1;
+  width: 100%;
+}
+.cellArrow{
+  width: 18rpx;
+  height: 30rpx;
+  margin-left: 10rpx;
+  /*background: #da3b40;*/
+}
+.cellMale{
+  width: 26rpx;
+  height: 39rpx;
+  margin-right: 15rpx;
+}
+.cellFemale{
+  width: 21rpx;
+  height: 38rpx;
+  margin-right: 15rpx;
+}
+.cellEyeClose{
+  width: 51rpx;
+  height: 25rpx;
+  padding-top: 7rpx;
+  margin-left: 15rpx;
+}
+.cellEyeOpen{
+  width: 51rpx;
+  height: 35rpx;
+  margin-left: 15rpx;
+}
+
+/*模态弹出层*/
+.modal_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+/*列表加载完毕后显示的文字(加载完毕)*/
+.loadOver{
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24rpx;
+  color:#999;
+}
+/*列表没有内容的时候 提示文字*/
+.isEmpty{
+  width: 100%;
+  line-height: 500rpx;
+  font-size: 24rpx;
+  color: #999;
+  text-align: center;
+}
