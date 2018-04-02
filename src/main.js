@@ -2,6 +2,12 @@ import Vue from 'vue'
 import App from './App'
 import store from '@/stores/index'
 import asyncRequestMethod from './utils/asyncRequestMethod'
+
+import mptoastRegistry from 'mptoast/registry'
+mptoastRegistry(Vue)
+
+
+
 Vue.config.productionTip = false
 App.mpType = 'app'
 

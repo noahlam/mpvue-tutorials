@@ -14,6 +14,8 @@
     <view v-if="showModal" @tap.stop="showModal=false" class="modal_container">
       <switchIdentity v-model="showModal"/>
     </view>
+    <view @tap="ccc">123123</view>
+    <mptoast />
   </scroll-view>
 </template>
 
@@ -23,9 +25,10 @@
   import counter from './components/counter'
   import functionList from './components/functionList'
   import switchIdentity from './components/switchIdentity'
-
+  import mptoast from 'mptoast'
+  import moment from '@/utils/dt'
   export default {
-    components: {topInfo, counter, functionList, switchIdentity},
+    components: {topInfo, counter, functionList, switchIdentity,mptoast},
     data () {
       return {
         showModal: false,  // 显示遮罩层
@@ -44,8 +47,15 @@
       switchIdentitys () {
         this.showModal = true
       },
+      ccc() {
+        this.$mptoast('我是弹窗内容',1500)
+      }
     },
-    onShow () {}
+    onShow () {
+      var ddd = moment()
+      ddd.get()
+      console.log(ddd.getFullYear())
+    }
   }
 
 </script>

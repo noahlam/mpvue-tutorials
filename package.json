@@ -10,6 +10,7 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "mptoast": "^1.0.9",
     "mpvue": "^1.0.1",
     "vuex": "^2.3.1"
   },
