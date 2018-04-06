@@ -26,7 +26,7 @@
   import functionList from './components/functionList'
   import switchIdentity from './components/switchIdentity'
   import mptoast from 'mptoast'
-  import moment from '@/utils/dt'
+  import miment from '@/utils/miment'
   export default {
     components: {topInfo, counter, functionList, switchIdentity,mptoast},
     data () {
@@ -52,9 +52,13 @@
       }
     },
     onShow () {
-      var ddd = moment()
-      ddd.get()
-      console.log(ddd.getFullYear())
+      // var ddd = miment('2018-05-05')
+      // 1522593599312
+      // let str = ddd.distance().format('YYYY年MM月DD日', true)
+      // let str = ddd.distance('2018-05-05')
+      // let str = ddd.daysInMonth()
+      // let str = ddd.firstDay().format()
+      // console.log(str)
     }
   }
 
