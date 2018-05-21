@@ -2,10 +2,15 @@ import Vue from 'vue'
 import App from './App'
 import store from '@/stores/index'
 import asyncRequestMethod from './utils/asyncRequestMethod'
-import mptoastReg from 'mptoast/registry'
+
+import mptoastRegistry from 'mptoast/registry'
+mptoastRegistry(Vue)
+
+
+
 Vue.config.productionTip = false
 App.mpType = 'app'
-mptoastReg(Vue)
+
 // 挂载全局的store
 Vue.prototype.store = store
 // 挂载一个全局的图片路径,方便后期修改图片地址的时候,做统一修改
