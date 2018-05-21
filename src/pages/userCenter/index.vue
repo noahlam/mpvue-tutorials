@@ -14,6 +14,8 @@
     <view v-if="showModal" @tap.stop="showModal=false" class="modal_container">
       <switchIdentity v-model="showModal"/>
     </view>
+    <mptoast></mptoast>
+    <view @tap="showTestToast">测试按钮</view>
   </scroll-view>
 </template>
 
@@ -23,9 +25,10 @@
   import counter from './components/counter'
   import functionList from './components/functionList'
   import switchIdentity from './components/switchIdentity'
+  import mptoast from 'mptoast'
 
   export default {
-    components: {topInfo, counter, functionList, switchIdentity},
+    components: {topInfo, counter, functionList, switchIdentity,mptoast},
     data () {
       return {
         showModal: false,  // 显示遮罩层
@@ -44,6 +47,9 @@
       switchIdentitys () {
         this.showModal = true
       },
+      showTestToast() {
+        this.$mptoast(`请输入正确网址，如xxxx.com`, 'none',1500)
+      }
     },
     onShow () {}
   }

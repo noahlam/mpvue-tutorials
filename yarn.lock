@@ -3286,6 +3286,22 @@ move-concurrently@^1.0.1:
     rimraf "^2.5.4"
     run-queue "^1.0.3"
 
+mptoast@*:
+  version "1.1.1"
+  resolved "https://registry.npmjs.org/mptoast/-/mptoast-1.1.1.tgz#6097bba1acfa542bab6eb3da42de20f156ceb8b5"
+  dependencies:
+    mptoast "*"
+    mpvue "^1.0.6"
+    vuex "^2.3.1"
+
+mptoast@1.1.3:
+  version "1.1.3"
+  resolved "https://registry.npmjs.org/mptoast/-/mptoast-1.1.3.tgz#946e62ac1182edc18ab9957eaedc26c921cf9e21"
+  dependencies:
+    mptoast "*"
+    mpvue "^1.0.6"
+    vuex "^2.3.1"
+
 mpvue-loader@^1.0.2:
   version "1.0.2"
   resolved "http://registry.npm.taobao.org/mpvue-loader/download/mpvue-loader-1.0.2.tgz#bd74f78f3950ace60bd3507ee9deb0cbddb1625c"
@@ -3322,6 +3338,10 @@ mpvue-webpack-target@^1.0.0:
 mpvue@^1.0.1:
   version "1.0.1"
   resolved "http://registry.npm.taobao.org/mpvue/download/mpvue-1.0.1.tgz#e1cff387117f163012bb85b4f1534091c0b73a06"
+
+mpvue@^1.0.6:
+  version "1.0.12"
+  resolved "https://registry.npmjs.org/mpvue/-/mpvue-1.0.12.tgz#03610de052050861edf36b873df91b30623ad233"
 
 ms@2.0.0:
   version "2.0.0"
