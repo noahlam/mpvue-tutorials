@@ -79,7 +79,7 @@ export default {
   data(){
     return{
       userInfo:{
-        avatar: 'https://mp.weixin.qq.com/debug/wxadoc/dev/image/cat/1.png?t=2018315',
+        avatar: 'http://mpvue.com/assets/img/logo.0aaccdfd.png',
         mobile: '15985817766',
         name: '',
         sex: 0,

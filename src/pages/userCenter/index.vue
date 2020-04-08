@@ -1,5 +1,5 @@
 <template>
-  <scroll-view :scroll-y="showModal?false:true" class="container">
+  <scroll-view :scroll-y="showModal?false:true" class="container" enable-flex="true">
     <topInfo />
     <counter />
     <view class="mt10">
@@ -26,7 +26,6 @@
   import functionList from './components/functionList'
   import switchIdentity from './components/switchIdentity'
   import mptoast from 'mptoast'
-  import miment from '@/utils/miment'
   export default {
     components: {topInfo, counter, functionList, switchIdentity,mptoast},
     data () {
@@ -63,7 +62,7 @@
   }
 
 </script>
-<style scoped>
+<style>
   .cell {
     height: 100rpx;
     width: 100%;

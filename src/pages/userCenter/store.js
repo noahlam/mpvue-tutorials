@@ -8,7 +8,7 @@ const store = {
       mobile: 15985817766,
       tel: 15985817766,
       email: '284516433@qqcom',
-      avatar: 'https://mp.weixin.qq.com/debug/wxadoc/dev/image/cat/1.png?t=2018315',
+      avatar: 'http://mpvue.com/assets/img/logo.0aaccdfd.png',
       sex: 1,
       birthday: '1995-05-06',
       joinTime: '2004-05-06',

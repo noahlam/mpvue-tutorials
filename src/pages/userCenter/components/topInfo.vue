@@ -2,7 +2,7 @@
   <view class="topinfo_container">
     <view class="topinfo_showInfo">
       <view class="topinfo_avatarWrap">
-        <image mode="aspectFit" class="topinfo_avatar" src="https://mp.weixin.qq.com/debug/wxadoc/dev/image/cat/1.png?t=2018315"></image>
+        <image mode="aspectFit" class="topinfo_avatar" src="http://mpvue.com/assets/img/logo.0aaccdfd.png"></image>
         <image mode="aspectFit" class="topinfo_gender" :src="$$imagePath + 'female.png'" v-if="$$imagePath && userInfo.sex==1"></image>
         <image mode="aspectFit" class="topinfo_gender" :src="$$imagePath + 'male.png'" v-if="$$imagePath && userInfo.sex==2"></image>
       </view>

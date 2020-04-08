@@ -1,0 +1,13 @@
+{
+  "pages": [
+    "pages/userCenter/main",
+    "pages/editUserInfo/main",
+    "pages/test/main"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  }
+}
